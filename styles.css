@@ -1,0 +1,302 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    border-bottom: 2px solid #efefef;
+}
+
+.hidden {
+    display: none;
+}
+/*Grid */
+/*ukrycie pod mobile */
+@media screen and (max-width: 768px) {
+    .right_column, .searcher {
+        display: none;
+    }
+}
+
+.header_container {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .header_container {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .two_column_grid {
+        display: flex;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .main_column {
+        max-width: 500px;
+    }
+
+    .right_column {
+        width: 300px;
+    }
+
+    .footer_container {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+/* header */
+.logo {
+    margin-left: 10px;
+}
+
+.nav_icons {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.header_user {
+    height: 24px;
+    border-radius: 12px;
+}
+
+/*main_column grid */
+.main_column_box {
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    margin: 10px
+}
+
+/* box z listą znajomych */
+.friend_list {  
+    padding: 5px;
+    display: flex;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.friend_box {
+    padding: 5px;
+}
+
+.friend_icon {
+    height: 42px;
+    border: 2px solid #dd2a7c;
+    border-radius: 25px;
+    padding: 2px;
+}
+
+.friend_box p {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*artykuł*/
+/*header*/
+.article_header {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_author {
+    padding: 5px;
+    display: flex;
+}
+
+.article_author img {
+    height: 26px;
+    border: 1px solid #dd2a7c;
+    border-radius: 15px;
+    padding: 1px;
+    margin: 5px;
+}
+
+.article_author h1 {
+    padding-top: 5px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.article_author p {
+    padding-top: 2px;
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.article_menu {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.article_img img {
+    width: 100%;
+}
+
+.article_comments {
+    padding: 10px;
+}
+
+.article_comments_icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.article_comments_counter {
+    padding: 5px 0px 5px 0px ;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.article_comments_comt {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.article_comments_comt span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.article_comments_add {
+    margin-top: 30px;
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.comment_input {
+    margin-left: 10px;
+    border: none;
+    font-size: 12px;
+}
+
+/* przycisk do odsłaniania wpisu */
+
+#remove_class {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*right_column grid */
+.right_column_box {
+    padding: 10px;
+}
+
+.right_column_box_grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_column_box_grid_right {
+    display: flex;
+    align-items: center;
+}
+
+.my_profile_header {
+    margin-bottom: 15px;
+}
+
+.friend_prop_header {
+    margin-bottom: 10px;
+}
+
+.friend_prop {
+    margin-bottom: 5px
+}
+
+.profil_data {
+    display: flex;
+}
+
+.profil_data img {
+    margin-right: 5px;
+}
+
+.profil_data h1 {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.profil_data p {
+    padding-top: 2px;
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.my_profil_icon {
+    height: 42px !important;
+    border-radius: 21px !important;
+}
+
+.friend_prop_icon {
+    height: 30px !important;
+    border-radius: 18px !important;
+    border: none !important;
+}
+
+.prop_left, .prop_right {
+    font-size: 10px;
+}
+
+.prop_left {
+    font-weight: 300;
+}
+
+.prop_right {
+    font-weight: 600;
+}
+
+.right_column_link {
+    text-decoration: none;
+    font-size: 10px;
+    color: #3095f6;
+    font-weight: 600;
+}
+
+.my_profil_link {
+    font-size: 12px !important;
+}
+
+/* footer */
+
+footer {
+    font-size: 8px;
+    font-weight 300;
+}
+
+.footer_line {
+    padding: 10px;
+}
+
+.footer_links {
+    display: flex;
+}
+
+.footer_links li {
+    margin: 0px 5px 0px 5px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #969696;
+}
+
+.footer_line p {
+    color: #969696;
+}
